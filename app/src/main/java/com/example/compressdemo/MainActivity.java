@@ -6,34 +6,22 @@ import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
-import android.database.Cursor;
-import android.graphics.Bitmap;
-import android.hardware.camera2.CameraAccessException;
-import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
-import android.provider.MediaStore;
 import android.text.TextUtils;
-import android.util.Log;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.io.File;
-import java.io.IOException;
-import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.HashSet;
+import com.example.luban.CompressionPredicate;
+import com.example.luban.Luban;
+import com.example.luban.OnCompressListener;
 
-import id.zelory.compressor.Compressor;
-import io.reactivex.functions.Consumer;
-import io.reactivex.schedulers.Schedulers;
-import top.zibin.luban.CompressionPredicate;
-import top.zibin.luban.Luban;
-import top.zibin.luban.OnCompressListener;
+import java.io.File;
+import java.util.HashSet;
 
 public class MainActivity extends AppCompatActivity {
 

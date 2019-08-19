@@ -9,11 +9,11 @@ import android.os.Message;
 
 import androidx.annotation.NonNull;
 
+import com.example.compressor.Compressor;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.HashSet;
-
-import id.zelory.compressor.Compressor;
 
 public class CompressUtils implements Handler.Callback{
 
@@ -85,8 +85,8 @@ public class CompressUtils implements Handler.Callback{
                         File result = new Compressor(context)
                                 .setMaxWidth(1200)
                                 .setMaxHeight(1200)
-                                .setQuality(75)
-                                .setCompressFormat(Bitmap.CompressFormat.WEBP)
+                                .setQuality(40)
+                                .setCompressFormat(Bitmap.CompressFormat.JPEG)
                                 .setDestinationDirectoryPath(targetDir)
                                 .compressToFile(new File(path));
 
